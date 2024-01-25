@@ -1,0 +1,71 @@
+
+
+<!-- Modal-->
+<div>
+   
+      
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" >Add Todo</h1>
+            </div>
+
+            <div class="modal-body">
+
+                <form [formGroup]="empDetail">
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="id" class="col-form-label">ID</label>
+
+                        <div>
+                            <input type="number" formControlName="id" id="userId" class="form-control" placeholder="" >
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="Name" class="col-form-label">Customer Name</label>
+
+                        <div>
+                            <input type="text" formControlName="customerName" id="CustomerName" class="form-control" >
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="ProdName" class=" col-form-label">Product Name</label>
+
+                        <div>
+                            <input type="text" formControlName="productName" id="ProductName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="amount" class=" col-form-label">Amount</label>
+
+                        <div>
+                            <input type="number"formControlName="amount" id="amount" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="Date" class=" col-form-label">Date</label>
+
+                        <div class="">
+                            <input type="date" formControlName="date" id="date" class="form-control" >
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" (click)="modal.close()">Close</button>
+                <button type="button" class="btn btn-primary"   (click)="addTasks()">Update</button>
+            </div>
+
+</div>
+
+
+
+

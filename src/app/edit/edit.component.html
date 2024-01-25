@@ -1,0 +1,67 @@
+<div>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Edit Task</h4>
+
+	</div>
+	<div class="modal-body">
+	
+		<div class="mb-3">
+			
+                <form [formGroup]="empDetail">
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="id" class="col-form-label">ID</label>
+
+                        <div>
+                            <input type="number" formControlName="id" id="userId" class="form-control" >
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="Name" class="col-form-label">Customer Name</label>
+
+                        <div>
+                            <input type="text" formControlName="customerName" id="CustomerName" class="form-control" >
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="ProdName" class=" col-form-label">Product Name</label>
+
+                        <div>
+                            <input type="text" formControlName="productName" id="ProductName" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="amount" class="  col-form-label">Amount</label>
+
+                        <div>
+                            <input type="number" formControlName="amount" id="amount" class="form-control col-sm-10">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 align-items-center">
+
+                        <label for="Date" class=" col-form-label">Date</label>
+
+                        <div >
+                            <input type="date" formControlName="date" id="date" class="form-control" >
+                        </div>
+                    </div>
+                </form>
+		
+		</div>
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-primary" (click)="modal.close()">No</button>
+		<button type="button"   class="btn btn-danger" (click)="editTodo()">yes</button>
+	</div>
+
+
+</div>

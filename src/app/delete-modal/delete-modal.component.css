@@ -1,0 +1,21 @@
+.main{
+    height: 200px;
+    padding: 15px;
+}
+
+.main h2{
+    padding: 20px 0px;
+}
+
+.btn-align{
+    text-align: right;
+    margin: 55px 0px;
+}
+
+.btx{
+    border: none;
+    background-color: blue;
+    padding: 6px 26px;
+    margin: 0px 5px;
+    color: white;
+}

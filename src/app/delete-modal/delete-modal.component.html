@@ -1,0 +1,22 @@
+<div>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Delete Task</h4>
+
+	</div>
+	<div class="modal-body">
+		hello everyone
+		<div class="mb-3">
+
+			<div class="input-group">
+				are you sure you want to delete this task?
+			</div>
+		</div>
+
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-primary" (click)="modal.close('Ok click')">No</button>
+		<button type="button"   class="btn btn-danger" (click)="deleteTask(true)">yes</button>
+	</div>
+
+
+</div>

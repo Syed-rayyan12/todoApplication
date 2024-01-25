@@ -1,0 +1,116 @@
+<div class="container main">
+
+    <div class="content">
+        <h2 class="heading">Add your task, and more</h2>
+        <p class="para">Todo App</p>
+    </div>
+    <div>
+        <img src="" alt="">
+    </div>
+
+    <a (click)="addConfirm()" type="button" class="btnn" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        Add
+    </a>
+</div>
+
+<div class=" container mern">
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Purchase ID</th>
+                <th>Customer Name</th>
+                <th>Product Name</th>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Operations</th>
+                <!-- <th>Delete</th> -->
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            <tr *ngFor="let item of list">
+                <td><a class="ids" href="">{{item.id}}</a></td>
+                <td>{{item.customerName}}</td>
+                <td>{{item.productName}}</td>
+                <td>{{item.amount}}</td>
+                <td>{{item.date}}</td>
+                <td>
+                    <button style="margin: 0px 5px;" class="btn btn-primary" (click)="editTask(item)">Edit
+                        <i class="fa fa-pencil" aria-hidden="true"
+                            style="padding: 4px 4px; color: white ; cursor: pointer"></i>
+                    </button>
+
+                    <button class="btn btn-danger" (click)="deleteItem(item.id)">Delete
+                        <i class="fa fa-trash" aria-hidden="true"
+                            style="padding: 4px 4px; color: white; cursor: pointer;"></i>
+                    </button>
+
+                </td>
+
+            </tr>
+
+
+
+
+            <!-- <tr>
+                <td><a class="ids" href="">#TB010332</a></td>
+                <td>Borosil Paper Cup</td>
+                <td>Daniel Gonzalez</td>
+                <td>$345.00</td>
+                <td>29 Oct, 2022</td>
+                <td><a class="ids1" href="">Edit</a></td>
+                <td><a class="ids1" href="">Delete</a></td>
+
+            </tr>
+            <tr>
+                <td><a class="ids" href="">#TB010333</a></td>
+                <td>Stillbird Helmet</td>
+                <td>Stephen Bird</td>
+                <td>$80.00</td>
+                <td>30 Oct, 2022</td>
+                <td><a class="ids1" href="">Edit</a></td>
+                <td><a class="ids1" href="">Delete</a></td>
+            </tr>
+            <tr>
+                <td><a class="ids" href="">#TB010334</a></td>
+                <td>Bentwood Chair</td>
+                <td>Ashley Silva</td>
+                <td>$349.99</td>
+                <td>31 Oct, 2022</td>
+                <td><a class="ids1" href="">Edit</a></td>
+                <td><a class="ids1" href="">Delete</a></td>
+
+            </tr>
+            <tr>
+                <td><a class="ids" href="">#TB010335</a></td>
+                <td>Apple Headphone</td>
+                <td>Scott Wilson</td>
+                <td>$264.37</td>
+                <td>01 Nov, 2022</td>
+                <td><a class="ids1" href="">Edit</a></td>
+                <td><a class="ids1" href="">Delete</a></td>
+            </tr>
+            <tr>
+                <td><a class="ids" href="">#TB010336</a></td>
+                <td>Smart Watch for Man's</td>
+                <td>Heather Jimenez</td>
+                <td>$741.98</td>
+                <td>02 Nov, 2022</td>
+                <td><a class="ids1" href="">Edit</a></td>
+                <td><a class="ids1" href="">Delete</a></td>
+            </tr>-->
+
+</tbody>
+
+
+</table>
+
+
+</div>
+
+
+
+<!--<app-delete-modal></app-delete-modal>-->

@@ -1,0 +1,12 @@
+.modal-dialog{
+    margin-top: 6%;
+ }
+ 
+ .main-field{
+     padding: 37px;
+ }
+ 
+ .field{
+     flex:0 0 auto;
+     width: 40%;
+ }

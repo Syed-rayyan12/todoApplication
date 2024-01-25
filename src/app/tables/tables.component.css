@@ -1,0 +1,67 @@
+.mern {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 3%;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid lightgray;
+    width: 100%;
+}
+
+thead tr {
+    background-color: #d4d4d4;
+}
+
+th,
+td {
+    border-bottom: 1px solid lightgray;
+    text-align: left;
+    padding: 0.75rem 3rem;
+
+}
+
+.ids {
+    text-decoration: none;
+
+}
+
+.ids1 {
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    padding: 8px 7px;
+    border-radius: 4px;
+}
+
+.main{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: powderblue;
+    margin-top: 3%;
+    border-radius: 5px;
+}
+
+.content {
+    padding: 20px;
+}
+.content .heading{
+    font-size: 20px;  
+}
+
+.content .para{
+    font-size: 15px;
+}
+
+.btnn {
+    padding: 10px 50px;
+    margin: 33px 20px;
+    color: white;
+    text-decoration: none;
+    background-color: #3b8d9a;
+    border-radius: 23px;
+}
